@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Administrador - Soluciones I. Torres</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/zoom.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Soluciones I. Torres</h1>
+            <p>Panel del Administrador</p>
+        </div>
+        <button class="boton rojo" onclick="cerrarSesion()">Cerrar sesión</button>
+    </header>
+
+    <main>
+
+        <!-- DASHBOARD -->
+        <section>
+            <h2>Dashboard de la empresa</h2>
+            <div class="tarjetas">
+                <div class="tarjeta"><h3>Clientes registrados</h3><p id="kClientes">0</p></div>
+                <div class="tarjeta"><h3>Solicitudes totales</h3><p id="kSolicitudes">0</p></div>
+                <div class="tarjeta"><h3>Servicios pendientes</h3><p id="kPendientes">0</p></div>
+                <div class="tarjeta"><h3>Servicios en proceso</h3><p id="kProceso">0</p></div>
+                <div class="tarjeta"><h3>Servicios terminados</h3><p id="kTerminados">0</p></div>
+                <div class="tarjeta"><h3>Ventas del mes</h3><p id="kVentasMes">S/ 0</p></div>
+                <div class="tarjeta"><h3>Ventas totales</h3><p id="kVentasTotal">S/ 0</p></div>
+                <div class="tarjeta"><h3>Productos por entregar</h3><p id="kProductos">0</p></div>
+            </div>
+        </section>
+
+        <!-- GRÁFICOS -->
+        <div class="dos-columnas">
+            <section>
+                <h2>Servicios del mes</h2>
+                <div class="grafico" id="graficoServicios"></div>
+            </section>
+
+            <section>
+                <h2>Ventas por mes (S/)</h2>
+                <div class="grafico" id="graficoVentas"></div>
+            </section>
+        </div>
+
+        <!-- ASIGNAR TÉCNICOS -->
+        <section>
+            <h2>Servicios: enviar técnico</h2>
+            <p>Elige qué técnico irá a hacer cada servicio y presiona <b>Enviar</b>.</p>
+            <div class="tabla-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Cliente</th>
+                            <th>Servicio</th>
+                            <th>Fecha</th>
+                            <th>Técnico</th>
+                            <th>Estado</th>
+                            <th>Asignar técnico</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaServicios"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section>
+            <h2>Productos solicitados</h2>
+            <div class="tabla-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Cliente</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaProductos"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- CLIENTES -->
+        <section>
+            <h2>Clientes registrados</h2>
+            <div class="tabla-scroll">
+                <table>
+                    <thead>
+                        <tr><th>Nombre</th><th>Correo</th><th>Teléfono</th></tr>
+                    </thead>
+                    <tbody id="tablaClientes"></tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>Soluciones I. Torres - Proyecto de HTML</footer>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/administrador.js"></script>
+    <script src="js/zoom.js"></script>
+</body>
+</html>

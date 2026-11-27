@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Trabajador - Soluciones I. Torres</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/zoom.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Soluciones I. Torres</h1>
+            <p>Panel del Trabajador</p>
+        </div>
+        <button class="boton rojo" onclick="cerrarSesion()">Cerrar sesión</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Servicios solicitados por los clientes</h2>
+            <p>Aquí puedes ver qué cliente pidió cada servicio y marcar si está <b>en proceso</b> o <b>terminado</b>.</p>
+
+            <div class="tabla-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Cliente</th>
+                            <th>Servicio</th>
+                            <th>Descripción</th>
+                            <th>Fecha</th>
+                            <th>Técnico asignado</th>
+                            <th>Estado</th>
+                            <th>Actualizar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaServicios"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>Soluciones I. Torres - Proyecto de HTML</footer>
+
+    <script src="js/datos.js"></script>
+    <script src="js/trabajador.js"></script>
+    <script src="js/zoom.js"></script>
+</body>
+</html>

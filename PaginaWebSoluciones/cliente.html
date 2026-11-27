@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Cliente - Soluciones I. Torres</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/zoom.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Soluciones I. Torres</h1>
+            <p>Panel del Cliente</p>
+        </div>
+        <button class="boton rojo" onclick="cerrarSesion()">Cerrar sesión</button>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Bienvenido, <span id="nombreCliente"></span></h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Mis solicitudes</h3>
+                    <p id="totalSolicitudes">0</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Pendientes</h3>
+                    <p id="totalPendientes">0</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Terminadas / entregadas</h3>
+                    <p id="totalTerminadas">0</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="dos-columnas">
+
+            <!-- Solicitar servicios -->
+            <section>
+                <h2>Solicitar servicio</h2>
+                <div>
+                    <label for="servicioElegido">Servicio:</label>
+                    <select id="servicioElegido">
+                        <option value="">Seleccione un servicio</option>
+                        <option value="Soporte técnico">Soporte técnico - S/ 80</option>
+                        <option value="Cableado de red">Cableado de red - S/ 250</option>
+                        <option value="Instalación de impresoras">Instalación de impresoras - S/ 100</option>
+                        <option value="Mantenimiento de computadoras">Mantenimiento de computadoras - S/ 120</option>
+                        <option value="Supervisión de GPS">Supervisión de GPS - S/ 150</option>
+                    </select>
+
+                    <label for="descripcion">Describe lo que necesitas:</label>
+                    <textarea id="descripcion" rows="4"></textarea>
+
+                    <button type="button" class="boton" onclick="solicitarServicio()">Solicitar servicio</button>
+                    <p id="mensajeServicio" class="mensaje exito"></p>
+                </div>
+            </section>
+
+            <!-- Solicitar productos -->
+            <section>
+                <h2>Solicitar producto</h2>
+                <div>
+                    <label for="productoElegido">Producto:</label>
+                    <select id="productoElegido">
+                        <option value="">Seleccione un producto</option>
+                        <option value="Mouse inalámbrico">Mouse inalámbrico - S/ 25</option>
+                        <option value="Teclado USB">Teclado USB - S/ 45</option>
+                        <option value="Cable de red UTP 10m">Cable de red UTP 10m - S/ 15</option>
+                        <option value="Tinta para impresora">Tinta para impresora - S/ 60</option>
+                        <option value="Router WiFi">Router WiFi - S/ 120</option>
+                        <option value="Memoria USB 32GB">Memoria USB 32GB - S/ 30</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" min="1" max="50" value="1">
+
+                    <button type="button" class="boton" onclick="solicitarProducto()">Solicitar producto</button>
+                    <p id="mensajeProducto" class="mensaje exito"></p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Seguimiento -->
+        <section>
+            <h2>¿Cómo va mi solicitud?</h2>
+            <div class="tabla-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Tipo</th>
+                            <th>Detalle</th>
+                            <th>Fecha</th>
+                            <th>Técnico</th>
+                            <th>Estado</th>
+                            <th>Avance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaSolicitudes"></tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>Soluciones I. Torres - Proyecto de HTML</footer>
+
+    <script src="js/datos.js"></script>
+    <script src="js/cliente.js"></script>
+    <script src="js/zoom.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soluciones I. Torres</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/zoom.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-torres">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Soluciones I. Torres</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Mostrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cuenta">Crear cuenta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cuenta">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Carrusel de Bootstrap -->
+        <div id="carruselInicio" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active slide-1">
+                    <img src="img/hero-tecnologia.svg" alt="" class="slide-img">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Tu servicio técnico en un solo lugar</h1>
+                            <p class="opacity-75">Soporte técnico, cableado de red, impresoras y mantenimiento de computadoras para negocios y familias.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#cuenta">Crear mi cuenta</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item slide-2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Nuevo: Supervisión de GPS</h1>
+                            <p>Monitorea tus vehículos y equipos en tiempo real. Solo S/ 150.</p>
+                            <p><a class="btn btn-lg btn-success" href="#servicios">Ver servicios</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item slide-3">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Solicita y sigue tu atención</h1>
+                            <p>Pide servicios y productos desde tu cuenta y mira cómo avanza tu solicitud.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#cuenta">Iniciar sesión</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselInicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselInicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <div class="container marketing">
+
+            <!-- Nosotros -->
+            <section id="nosotros" class="bloque mb-4">
+                <h2 class="fw-normal">Nosotros</h2>
+                <p class="lead mb-2">
+                    <b>Soluciones I. Torres</b> es una empresa que brinda servicios tecnológicos
+                    a negocios y familias: soporte técnico, cableado de red, instalación de
+                    impresoras, mantenimiento de computadoras y supervisión de GPS.
+                    También vendemos accesorios y productos de computación.
+                </p>
+                <p class="mb-0">
+                    Con esta página puedes solicitar servicios y productos y ver cómo va
+                    la atención de tu solicitud.
+                </p>
+            </section>
+
+            <!-- Servicios -->
+            <section id="servicios" class="bloque mb-4">
+                <h2 class="fw-normal mb-4">¿Qué hacemos?</h2>
+                <div class="row g-4 justify-content-center text-center">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-servicio h-100"><div class="card-body">
+                            <span class="icono-servicio"><i class="bi bi-headset"></i></span>
+                            <h3 class="h5">Soporte técnico</h3>
+                            <p class="text-secondary">Solucionamos problemas de tus equipos.</p>
+                            <p class="precio mb-0">S/ 80</p>
+                        </div></div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-servicio h-100"><div class="card-body">
+                            <span class="icono-servicio"><i class="bi bi-ethernet"></i></span>
+                            <h3 class="h5">Cableado de red</h3>
+                            <p class="text-secondary">Instalamos la red de tu empresa.</p>
+                            <p class="precio mb-0">S/ 250</p>
+                        </div></div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-servicio h-100"><div class="card-body">
+                            <span class="icono-servicio"><i class="bi bi-printer"></i></span>
+                            <h3 class="h5">Impresoras</h3>
+                            <p class="text-secondary">Instalación y configuración.</p>
+                            <p class="precio mb-0">S/ 100</p>
+                        </div></div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-servicio h-100"><div class="card-body">
+                            <span class="icono-servicio"><i class="bi bi-pc-display"></i></span>
+                            <h3 class="h5">Mantenimiento</h3>
+                            <p class="text-secondary">Limpieza y mejora de computadoras.</p>
+                            <p class="precio mb-0">S/ 120</p>
+                        </div></div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-servicio h-100"><div class="card-body">
+                            <span class="icono-servicio"><i class="bi bi-geo-alt-fill"></i></span>
+                            <h3 class="h5">Supervisión de GPS</h3>
+                            <p class="text-secondary">Monitoreo de ubicación de tus vehículos y equipos.</p>
+                            <p class="precio mb-0">S/ 150</p>
+                        </div></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Crear cuenta e iniciar sesión -->
+            <div id="cuenta" class="row g-4 mb-4">
+
+                <div class="col-md-6">
+                    <section class="bloque h-100">
+                        <h2 class="fw-normal">Crear cuenta</h2>
+                        <p>Solo los clientes pueden crear una cuenta.</p>
+
+                        <label class="form-label mt-2" for="regNombre">Nombre completo o empresa:</label>
+                        <input type="text" id="regNombre" class="form-control">
+
+                        <label class="form-label mt-2" for="regTelefono">Teléfono:</label>
+                        <input type="text" id="regTelefono" class="form-control">
+
+                        <label class="form-label mt-2" for="regCorreo">Correo:</label>
+                        <input type="email" id="regCorreo" class="form-control">
+
+                        <label class="form-label mt-2" for="regClave">Contraseña:</label>
+                        <input type="password" id="regClave" class="form-control">
+
+                        <label class="form-label mt-2" for="regClave2">Repetir contraseña:</label>
+                        <input type="password" id="regClave2" class="form-control">
+
+                        <button type="button" class="btn btn-primary mt-3" onclick="crearCuenta()">Crear cuenta</button>
+                        <p id="mensajeRegistro" class="mensaje"></p>
+                    </section>
+                </div>
+
+                <div class="col-md-6">
+                    <section class="bloque h-100">
+                        <h2 class="fw-normal">Iniciar sesión</h2>
+
+                        <label class="form-label mt-2" for="logCorreo">Correo:</label>
+                        <input type="email" id="logCorreo" class="form-control">
+
+                        <label class="form-label mt-2" for="logClave">Contraseña:</label>
+                        <input type="password" id="logClave" class="form-control">
+
+                        <button type="button" class="btn btn-primary mt-3" onclick="iniciarSesion()">Ingresar</button>
+                        <p id="mensajeLogin" class="mensaje"></p>
+
+                        <div class="alert alert-warning small mb-0">
+                            <b>Cuentas de prueba:</b><br>
+                            Cliente: ana@andina.com / 1234<br>
+                            Trabajador: trabajador@torres.com / trabajador123<br>
+                            Administrador: admin@torres.com / admin123
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="pie">Soluciones I. Torres - Proyecto de HTML</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/zoom.js"></script>
+</body>
+</html>
