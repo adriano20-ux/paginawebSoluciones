@@ -42,7 +42,6 @@
 
 ---
 
-
 ## Estructura del proyecto
 
 ```
@@ -71,34 +70,6 @@ SolucionesITorres/
     └── hero-tecnologia.svg
 ```
 
----
-
-## Instalación
-
-### Requisitos
-- [XAMPP](https://www.apachefriends.org/) (Apache + MySQL + PHP).
-- Conexión a internet (Bootstrap y Google Charts se cargan desde CDN).
-
-### Pasos
-
-1. Copia el proyecto en `C:\xampp\htdocs\SolucionesITorres`.
-2. Enciende **Apache** y **MySQL** desde el panel de XAMPP.
-3. Importa la base de datos:
-   - Desde **phpMyAdmin** (`http://localhost/phpmyadmin`): pestaña *Importar* y elige `sql/soluciones_torres.sql`.
-   - O desde la terminal:
-     ```
-     C:\xampp\mysql\bin\mysql.exe -u root < sql/soluciones_torres.sql
-     ```
-4. Revisa `api/conexion.php` (por defecto usa `root` sin contraseña, como XAMPP):
-   ```php
-   $servidor  = "localhost";
-   $baseDatos = "soluciones_torres";
-   $usuarioBD = "root";
-   $claveBD   = "";
-   ```
-5. Abre `http://localhost/SolucionesITorres/` en el navegador.
-
-> ⚠️ Debe abrirse mediante `http://localhost/...` y no con doble clic en el HTML, porque necesita PHP.
 
 ---
 
