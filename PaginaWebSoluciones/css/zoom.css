@@ -1,0 +1,29 @@
+/* Control de zoom y accesibilidad visual (flotante, esquina inferior derecha) */
+#controlZoom {
+    position: fixed; right: 16px; bottom: 16px; z-index: 2000;
+    display: flex; align-items: center; gap: 8px;
+    background: #0b1736; padding: 8px; border-radius: 40px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.35);
+    font-family: Arial, sans-serif;
+}
+#controlZoom button {
+    width: 38px; height: 38px; border: 0; border-radius: 50%;
+    background: #2563eb; color: white; font-size: 22px; line-height: 1;
+    display: inline-flex; align-items: center; justify-content: center;
+    cursor: pointer; padding: 0;
+}
+#controlZoom button:hover:not(:disabled) { background: #1d4ed8; }
+#controlZoom button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+#controlZoom button:disabled { opacity: .45; cursor: not-allowed; }
+#controlZoom .zoom-valor {
+    min-width: 52px; text-align: center; color: white; font-weight: bold; font-size: 16px;
+}
+#controlZoom .zoom-minimizar { background: #64748b; }
+#controlZoom .zoom-minimizar:hover:not(:disabled) { background: #475569; }
+
+/* Estado minimizado: solo queda un botón redondo para volver a abrirlo */
+#controlZoom.minimizado { padding: 6px; gap: 0; }
+#controlZoom.minimizado .zoom-menos,
+#controlZoom.minimizado .zoom-mas,
+#controlZoom.minimizado .zoom-valor { display: none; }
+#controlZoom.minimizado .zoom-minimizar { background: #2563eb; font-size: 18px; }

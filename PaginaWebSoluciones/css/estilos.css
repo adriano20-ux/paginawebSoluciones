@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* ---------- Encabezado ---------- */
+header {
+    background-color: #0b1736;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 3px 0 0 0;
+    color: #cbd5e1;
+}
+
+header a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* ---------- Contenedor general ---------- */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #0b1736;
+}
+
+/* ---------- Portada ---------- */
+.portada {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portada div {
+    flex: 1;
+    min-width: 280px;
+}
+
+.portada img {
+    width: 100%;
+    max-width: 450px;
+}
+
+.portada h2 {
+    font-size: 32px;
+}
+
+/* ---------- Tarjetas ---------- */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tarjeta {
+    background-color: #eff6ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.tarjeta h3 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #475569;
+}
+
+.tarjeta p {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0b1736;
+}
+
+.tarjeta.texto p {
+    font-size: 18px;
+}
+
+.dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+@media (max-width: 700px) {
+    .dos-columnas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- Formularios ---------- */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 9px;
+    margin-top: 4px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+td select {
+    width: auto;
+    padding: 5px;
+    margin: 0;
+}
+
+.boton {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color: #1d4ed8;
+}
+
+.boton.chico {
+    padding: 6px 12px;
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.boton.rojo {
+    background-color: #dc2626;
+    margin-top: 0;
+    padding: 8px 14px;
+}
+
+.mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.mensaje.exito {
+    color: #16a34a;
+}
+
+.mensaje.error {
+    color: #dc2626;
+}
+
+.aviso {
+    background-color: #fef9c3;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ---------- Tablas ---------- */
+.tabla-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0b1736;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+/* Etiqueta del estado */
+.estado {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: #dbeafe;
+}
+
+progress {
+    width: 120px;
+}
+
+/* ---------- Gráficos (Google Charts) ---------- */
+.grafico {
+    width: 100%;
+    min-height: 230px;
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
