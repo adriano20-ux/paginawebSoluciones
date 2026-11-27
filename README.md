@@ -104,8 +104,8 @@ SolucionesITorres/
 
 ## Autores
 
-| Integrante | Participación |
-|------------|---------------|
+| Integrante |
+|------------|
 | TORRES VILLALOBOS, Adriano Antonio
 | HILARIO AZNARAN, Axel Teodoro
 | MACEDO TAMARIZ, Carlos
