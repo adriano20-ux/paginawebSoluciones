@@ -111,6 +111,3 @@ SolucionesITorres/
 | MACEDO TAMARIZ, Carlos
 | MEZA ROBLES, Marcos Alberto Elías 
 
----
-
-> Las cuentas de prueba y la conexión con `root` sin contraseña son solo para uso local y educativo. Cámbialas antes de publicar el sitio en un servidor real.
